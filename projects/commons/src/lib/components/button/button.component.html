@@ -1,1 +1,5 @@
-<button></button>
+<div class="commons-button-box">
+    <div id="commons-button" [ngClass]="classList">
+        {{this.upperCase ? text : (text | uppercase) }}
+    </div>
+</div>

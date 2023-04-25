@@ -1,0 +1,38 @@
+
+@use 'sass:map';
+
+.button-box {
+ height: 100%;
+ width: 100%;
+}
+
+.commons-root-button {
+    height: 30px;
+    width: 90px;
+    border-radius: 0.2em;
+    border: 1px solid red;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &.commons-root-button--size-small {
+        height: 50px;
+        width: 50px;
+    }
+    &.commons-root-button--size-medium {
+        height: 30px;
+        width: 90px;
+    }
+    &.commons-root-button--size-big {
+        height: 50px;
+        width: 150px;
+    }
+
+    &.commons-root-button--fab {
+        position: absolute;
+        left: 100px;
+        bottom: 100px;
+    }
+}

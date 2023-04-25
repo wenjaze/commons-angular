@@ -3,5 +3,6 @@
  */
 
 export * from './lib/commons.service';
-export * from './lib/commons.component';
+export * from './lib/components/button/button.component';
 export * from './lib/commons.module';
+
