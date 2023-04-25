@@ -1,7 +1,6 @@
 <div class="commons-button-box">
-    <div [ngClass]="classList" class="commons-root-button">
-        <i class="fa-solid fa-magnifying-glass">{{src}}</i>
-<!--         <span *ngIf="!!text && text != ''">{{this.upperCase ? text : (text | uppercase) }}</span>
-         -->
+    <div #rootButton [ngClass]="classList" class="commons-root-button">
+        <fa-icon icon="coffee"></fa-icon>
+        <span class="commons-button-text" *ngIf="!!text">{{this.upperCase ? text : (text | uppercase) }}</span>
     </div>
 </div>

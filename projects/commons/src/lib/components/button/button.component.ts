@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
 	selector: 'commons-button',
@@ -6,12 +6,13 @@ import { Component, ContentChild, ElementRef, Input } from '@angular/core';
 	styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-	@Input() src!: string;
+    @ViewChild('rootButton') rootButton!: ElementRef; 
 
 	@Input() icon: string = '';
 	@Input() text: string = '';
 	@Input() upperCase: boolean = true;
 	@Input() color = 'white';
+    @Input() backgroundColor!:string;
 
 	/**
 	 * - fab
@@ -50,7 +51,11 @@ export class ButtonComponent {
 			'commons-root-button--size-' + this.size,
 		];
 
-		document.getElementById('commons-button')!.style.color = this.color;
+        try {
+            this.rootButton.nativeElement.style.color = this.color;
+        } catch (exception) {
+            console.log("Cannnot set color:",this.color);
+        }
 
 		if (this.align.trim() != '') {
 			this.classList.push(this.align.trim());
