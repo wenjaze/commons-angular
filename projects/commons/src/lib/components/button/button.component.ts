@@ -7,6 +7,8 @@ import { CommonsButtonType } from '../../commons';
 })
 
 export class ButtonComponent {
+    @Input() src !: string;
+
 	@Input() icon : string = "";
 	@Input() text : string = "";
 	@Input() upperCase : boolean = true;
@@ -27,7 +29,7 @@ export class ButtonComponent {
      * - big
      */
     @Input() size: string = 'medium';
-    
+
     /**
      * - left
      * - center
@@ -47,7 +49,6 @@ export class ButtonComponent {
             'commons-root-button',
             'commons-root-button--' + this.type,
             'commons-root-button--size-' + this.size,
-			this.upperCase ? 'upperCase' : ''
         ];
 
 		document.getElementById("commons-button")!.style.color = this.color;
