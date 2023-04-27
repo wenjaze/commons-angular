@@ -1,12 +1,18 @@
 {
-  "name": "@raskag/common",
-  "version": "0.0.2",
+  "name": "@raskag/commons-angular",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:publish" : "ng build && npm publish --access public",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "peerDependencies": {
+    "@fortawesome/angular-fontawesome": "^0.12.1",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "rxjs": "~7.5.0"
   },
   "dependencies": {
     "@angular/animations": "^15.1.0",
@@ -38,7 +44,6 @@
     "ng-packagr": "^15.1.0",
     "typescript": "~4.9.4"
   },
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wenjaze/commons.git"

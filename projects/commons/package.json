@@ -1,12 +1,18 @@
 {
-  "name": "commons",
+  "name": "@raskag/commons-angular",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^15.1.0",
-    "@angular/core": "^15.1.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenjaze/commons.git"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
+  "keywords": [
+    "angular",
+    "commons"
+  ],
+  "author": "raskag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenjaze/commons/issues"
   },
-  "sideEffects": false
+  "homepage": "https://github.com/wenjaze/commons#readme"
 }
