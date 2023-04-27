@@ -1,5 +1,4 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'commons-button',
@@ -14,7 +13,6 @@ export class ButtonComponent {
 	@Input() upperCase: boolean = true;
 	@Input() color = 'white';
     @Input() backgroundColor!:string;
-	faCoffee = faCoffee;
 
 	/**
 	 * - fab
