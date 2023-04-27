@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'commons-button',
@@ -6,13 +7,14 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 	styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-/*     @ViewChild('rootButton') rootButton!: ElementRef; 
- */
+    @ViewChild('rootButton') rootButton!: ElementRef; 
+
 	@Input() icon: string = '';
 	@Input() text: string = '';
 	@Input() upperCase: boolean = true;
 	@Input() color = 'white';
     @Input() backgroundColor!:string;
+	faCoffee = faCoffee;
 
 	/**
 	 * - fab
@@ -50,12 +52,12 @@ export class ButtonComponent {
 			'commons-root-button--' + this.type,
 			'commons-root-button--size-' + this.size,
 		];
-/* 
+
         try {
             this.rootButton.nativeElement.style.color = this.color;
         } catch (exception) {
             console.log("Cannnot set color:",this.color);
-        } */
+        }
 
 		if (this.align.trim() != '') {
 			this.classList.push(this.align.trim());
