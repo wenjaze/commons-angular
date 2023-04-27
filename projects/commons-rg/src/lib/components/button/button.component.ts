@@ -6,8 +6,8 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 	styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-    @ViewChild('rootButton') rootButton!: ElementRef; 
-
+/*     @ViewChild('rootButton') rootButton!: ElementRef; 
+ */
 	@Input() icon: string = '';
 	@Input() text: string = '';
 	@Input() upperCase: boolean = true;
@@ -50,12 +50,12 @@ export class ButtonComponent {
 			'commons-root-button--' + this.type,
 			'commons-root-button--size-' + this.size,
 		];
-
+/* 
         try {
             this.rootButton.nativeElement.style.color = this.color;
         } catch (exception) {
             console.log("Cannnot set color:",this.color);
-        }
+        } */
 
 		if (this.align.trim() != '') {
 			this.classList.push(this.align.trim());
@@ -79,6 +79,4 @@ export class ButtonComponent {
 
 		this.setClassList();
 	}
-
-	ngAfterViewInit() {}
 }
