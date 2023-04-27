@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "commons": {
+    "commons-rg": {
       "projectType": "library",
-      "root": "projects/commons",
-      "sourceRoot": "projects/commons/src",
+      "root": "projects/commons-rg",
+      "sourceRoot": "projects/commons-rg/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/commons/ng-package.json"
+            "project": "projects/commons-rg/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/commons/tsconfig.lib.prod.json"
+              "tsConfig": "projects/commons-rg/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/commons/tsconfig.lib.json"
+              "tsConfig": "projects/commons-rg/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/commons/tsconfig.spec.json",
+            "tsConfig": "projects/commons-rg/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

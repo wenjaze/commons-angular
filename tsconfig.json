@@ -4,8 +4,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "commons": [
-        "dist/commons"
+      "commons-rg": [
+        "dist/commons-rg"
       ]
     },
     "outDir": "./dist/out-tsc",
