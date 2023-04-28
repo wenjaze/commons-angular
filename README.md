@@ -7,7 +7,10 @@ Components will have basic customizability, as well as quite simple, lightweight
 
 ## How to use
 
-Get the 'commons-angular'
+Get the 'commons-angular' npm package using the following command:
+```bash
+npm i @raskag/commons-angular
+```
 
 ## Component progress
 ### Stages
