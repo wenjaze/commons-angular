@@ -6,9 +6,9 @@
 		[ngStyle]="{ color: color }"
 		class="commons-root-button"
 	>
-		<fa-icon icon="coffee" />
-		<span class="commons-button-text" *ngIf="!!text && text.trim() != ''"
-			>{{ text }}
+		<!-- <fa-icon icon="coffee" /> -->
+		<span class="commons-button-text" *ngIf="text"
+			>{{text.trim()}}
 		</span>
 	</div>
 </div>

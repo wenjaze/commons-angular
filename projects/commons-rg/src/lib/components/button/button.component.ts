@@ -9,7 +9,7 @@ export class ButtonComponent {
     @ViewChild('rootButton') rootButton!: ElementRef; 
 
 	@Input() icon = '';
-	@Input() text = '';
+	@Input() text!:string;
 
 	/**
 	 * Sets the color css property of the root button component.
@@ -28,14 +28,14 @@ export class ButtonComponent {
 	 * - raised
 	 * - icon
 	 */
-	@Input() _type = 'raised';
+	@Input() type = 'raised';
 
 	/**
 	 * - small
 	 * - medium
 	 * - big
 	 */
-	@Input() _size = 'medium';
+	@Input() size = 'medium';
 
 	public classList: string[] = [];
 	public typeIcon: string | undefined;
@@ -44,7 +44,11 @@ export class ButtonComponent {
 		this.setClassList();
 	}
 
-	private setClassList(): void {
+	ngOnChanges() {
+		this.setClassList();
+	}
+
+	public setClassList(): void {
 		this.classList = [
 			'commons-root-button',
 			'commons-root-button--' + this.type,
@@ -52,20 +56,29 @@ export class ButtonComponent {
 		];
 	}
 
-	set type(type:string){
+	public setType(type:string){
 		this.type = type;
 	}
 
-	get type() : string {
-		return this._type;
+	public setSize(size:string){
+		this.size = size;
 	}
 
-	set size(size:string){
-		this._size = size;
+	public getSize() : string {
+		return this.size;
 	}
 
-	get size() : string {
-		return this._size;
+	public getType() : string {
+		return this.type;
 	}
+
+	public setText(text : string) {
+		this.text = text;
+	}
+
+	public getText() : string {
+		return this.text
+	}
+
 
 }
