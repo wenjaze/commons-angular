@@ -1,6 +1,16 @@
 <div class="commons-button-box">
-    <div #rootButton [ngClass]="classList" class="commons-root-button">
-        <fa-icon icon="coffee"></fa-icon>
-        <span class="commons-button-text" *ngIf="!!text && text != '' && text != ' '">{{this.upperCase ? text : (text | uppercase) }}</span>
-    </div>
+	<div
+		#rootButton
+		[ngClass]="classList"
+		[ngStyle]="{ 'background-color': color }"
+		[ngStyle]="{ 'background-color': color }"
+		class="commons-root-button"
+	>
+		<fa-icon icon="coffee"></fa-icon>
+		<span
+			class="commons-button-text"
+			*ngIf="!!text && text != '' && text != ' '"
+			>{{ text }}
+		</span>
+	</div>
 </div>
