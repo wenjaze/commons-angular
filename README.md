@@ -24,17 +24,17 @@ may not include every customization option yet.
 
 ####
 to get designed and implemented:
-| Component  | Alpha | Beta | Stable |
-|---|:---:|:---:|:---:|
-| Button  |✅|  🟡 |  ❌ |
-| Form-field  |  ❌ | ❌  |  ❌ |
-| Pop-up |  ❌ |  ❌ | ❌  |
-| Snack-bar |  ❌ | ❌  | ❌  |
-| Checkbox |  ❌ |  ❌ | ❌  |
-| Table |  ❌ |  ❌ | ❌  |
-| Nav |❌ | ❌| ❌|
-| Spinner |❌|❌|❌|
-| ComboBox |❌|❌|❌|
-| Icon |❌ |❌|❌|
-| Chips |❌ |❌|❌|
-| Card |❌ |❌|❌|
+| Component  | Alpha | Beta | Stable | Milestone |
+|---|:---:|:---:|:---:|:---:|
+| Button  |✅|  🟡 |  ❌ |[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/1)](https://github.com/wenjaze/commons-angular/milestone/1)|
+| Form-field  |  ❌ | ❌  |  ❌ | [![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/3)](https://github.com/wenjaze/commons-angular/milestone/3)|
+| Pop-up |  ❌ |  ❌ | ❌  |[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/4)](https://github.com/wenjaze/commons-angular/milestone/4)|
+| Snack-bar |  ❌ | ❌  | ❌ |[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/5)](https://github.com/wenjaze/commons-angular/milestone/5) |
+| Checkbox |  ❌ |  ❌ | ❌ |[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/6)](https://github.com/wenjaze/commons-angular/milestone/6) |
+| Table |  ❌ |  ❌ | ❌ |[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/7)](https://github.com/wenjaze/commons-angular/milestone/7) |
+| Nav |❌ | ❌| ❌|[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/8)](https://github.com/wenjaze/commons-angular/milestone/8) |
+| Spinner |❌|❌|❌|[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/2)](https://github.com/wenjaze/commons-angular/milestone/2)|
+| ComboBox |❌|❌|❌|[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/9)](https://github.com/wenjaze/commons-angular/milestone/9) |
+| Icon |❌ |❌|❌|[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/10)](https://github.com/wenjaze/commons-angular/milestone/10) |
+| Chips |❌ |❌|❌|[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/11)](https://github.com/wenjaze/commons-angular/milestone/11) |
+| Card |❌ |❌|❌|[![GitHub milestone](https://img.shields.io/github/milestones/progress/wenjaze/commons-angular/12)](https://github.com/wenjaze/commons-angular/milestone/12) |

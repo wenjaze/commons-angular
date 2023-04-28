@@ -2,14 +2,12 @@
 	<div
 		#rootButton
 		[ngClass]="classList"
-		[ngStyle]="{ 'background-color': color }"
-		[ngStyle]="{ 'background-color': color }"
+		[ngStyle]="{ 'background-color': backgroundColor }"
+		[ngStyle]="{ color: color }"
 		class="commons-root-button"
 	>
-		<fa-icon icon="coffee"/>
-		<span
-			class="commons-button-text"
-			*ngIf="!!text && text != '' && text != ' '"
+		<fa-icon icon="coffee" />
+		<span class="commons-button-text" *ngIf="!!text && text.trim() != ''"
 			>{{ text }}
 		</span>
 	</div>
