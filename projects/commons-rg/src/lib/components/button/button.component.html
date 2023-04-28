@@ -1,14 +1,19 @@
-<div class="commons-button-box">
-	<div
-		#rootButton
-		[ngClass]="classList"
-		[style.backgroundColor]="backgroundColor"
-		[style.color]="color"
-		class="commons-root-button"
-	>
-		<!-- <fa-icon icon="coffee" /> -->
-		<span class="commons-button-text" *ngIf="text"
-			>{{text.trim()}}
-		</span>
-	</div>
+<div
+	#rootButton
+	[ngClass]="classList"
+	[style.backgroundColor]="backgroundColor"
+	[style.color]="color"
+	class="commons-root-button"
+	[class]="getFabClass()"
+>
+	<!-- <fa-icon icon="coffee" /> -->
+	<span class="commons-button-text" *ngIf="text && type != 'fab'"
+		>{{ text.trim() }}
+	</span>
+	<img
+		class="commons-button-icon"
+		*ngIf="type === 'fab'"
+		[src]="icon"
+		alt="icon"
+	/>
 </div>

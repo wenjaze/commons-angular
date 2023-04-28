@@ -6,10 +6,19 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 	styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-    @ViewChild('rootButton') rootButton!: ElementRef; 
+	@ViewChild('rootButton') rootButton!: ElementRef;
 
 	@Input() icon = '';
-	@Input() text!:string;
+	@Input() text!: string;
+	@Input() position!:
+		| 'bottom'
+		| 'top'
+		| 'left'
+		| 'right'
+		| 'bottom-left'
+		| 'bottom-right'
+		| 'top-left'
+		| 'top-right';
 
 	/**
 	 * Sets the color css property of the root button component.
@@ -19,7 +28,7 @@ export class ButtonComponent {
 	/**
 	 * Sets the backgroundColor css property of the root button component.
 	 */
-    @Input() backgroundColor!:string;
+	@Input() backgroundColor!: string;
 
 	/**
 	 * - fab
@@ -49,21 +58,26 @@ export class ButtonComponent {
 		];
 	}
 
-	public setType(type:string){
+	public setType(type: string) {
 		this.type = type;
 	}
 
-	public getType() : string {
+	public getType(): string {
 		return this.type;
 	}
 
-	public setText(text : string) {
+	public setText(text: string) {
 		this.text = text;
 	}
 
-	public getText() : string {
-		return this.text
+	public getText(): string {
+		return this.text;
 	}
 
-
+	getFabClass(): string {
+		if (this.type === 'fab') {
+			return `fab-${this.position}`;
+		}
+		return '';
+	}
 }
