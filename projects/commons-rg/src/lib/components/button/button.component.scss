@@ -11,26 +11,13 @@
     width: 90px;
     border-radius: 0.2em;
     display: flex;
-    background-color: rgba($color: #d3d0d0, $alpha: 1);
+    padding: 2%;
+    background-color: rgba($color: #d3d3d3, $alpha: 1);
     filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.1));
-    border: rgba(0,0,0,0.1) 1px solid;
 
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-    &.commons-root-button--size-small {
-        height: 50px;
-        width: 50px;
-    }
-    &.commons-root-button--size-medium {
-        height: 30px;
-        width: 90px;
-    }
-    &.commons-root-button--size-big {
-        height: 50px;
-        width: 150px;
-    }
 
     &.commons-root-button--fab {
         position: absolute;
@@ -48,7 +35,7 @@
     }
 
     &.commons-root-button--flat {
-
+        
     }
 
     &.commons-root-button--raised {

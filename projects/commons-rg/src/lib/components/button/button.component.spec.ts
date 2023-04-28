@@ -61,7 +61,6 @@ describe('ButtonComponent', () => {
 
   it('should set class list based on input values', () => {
     component.type = 'flat';
-    component.size = 'big';
     component.setClassList();
     fixture.detectChanges();
     expect(rootButtonEl.classList).toContain('commons-root-button--flat');
@@ -77,17 +76,6 @@ describe('ButtonComponent', () => {
     component.setClassList();
     fixture.detectChanges();
     expect(rootButtonEl.classList).toContain('commons-root-button--flat');
-  });
-
-  it('should change class list when size input changes', () => {
-    component.setSize('medium');
-    component.setClassList();
-    fixture.detectChanges();
-    expect(rootButtonEl.classList).toContain('commons-root-button--size-medium');
-    component.setSize('small');
-    component.setClassList();
-    fixture.detectChanges();
-    expect(rootButtonEl.classList).toContain('commons-root-button--size-small');
   });
 
   it('should expose the root button element through a ViewChild', () => {

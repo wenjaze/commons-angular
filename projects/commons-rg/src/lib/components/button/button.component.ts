@@ -27,15 +27,9 @@ export class ButtonComponent {
 	 * - flat
 	 * - raised
 	 * - icon
+	 * - rounded
 	 */
 	@Input() type = 'raised';
-
-	/**
-	 * - small
-	 * - medium
-	 * - big
-	 */
-	@Input() size = 'medium';
 
 	public classList: string[] = [];
 	public typeIcon: string | undefined;
@@ -52,20 +46,11 @@ export class ButtonComponent {
 		this.classList = [
 			'commons-root-button',
 			'commons-root-button--' + this.type,
-			'commons-root-button--size-' + this.size,
 		];
 	}
 
 	public setType(type:string){
 		this.type = type;
-	}
-
-	public setSize(size:string){
-		this.size = size;
-	}
-
-	public getSize() : string {
-		return this.size;
 	}
 
 	public getType() : string {
