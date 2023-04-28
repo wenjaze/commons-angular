@@ -8,8 +8,8 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 export class ButtonComponent {
     @ViewChild('rootButton') rootButton!: ElementRef; 
 
-	@Input() icon: string = '';
-	@Input() text: string = '';
+	@Input() icon = '';
+	@Input() text = '';
 
 	/**
 	 * Sets the color css property of the root button component.
@@ -28,14 +28,14 @@ export class ButtonComponent {
 	 * - raised
 	 * - icon
 	 */
-	@Input() _type: string = 'raised';
+	@Input() _type = 'raised';
 
 	/**
 	 * - small
 	 * - medium
 	 * - big
 	 */
-	@Input() _size: string = 'medium';
+	@Input() _size = 'medium';
 
 	public classList: string[] = [];
 	public typeIcon: string | undefined;
