@@ -6,8 +6,6 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 	styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-	@ViewChild('rootButton') rootButton!: ElementRef;
-
 	@Input() icon = '';
 	@Input() text!: string;
 	@Input() position!:

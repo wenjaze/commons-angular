@@ -77,8 +77,4 @@ describe('ButtonComponent', () => {
     fixture.detectChanges();
     expect(rootButtonEl.classList).toContain('commons-root-button--flat');
   });
-
-  it('should expose the root button element through a ViewChild', () => {
-    expect(component.rootButton.nativeElement).toBe(rootButtonEl);
-  });
 });
